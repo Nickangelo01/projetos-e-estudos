@@ -1,7 +1,102 @@
 body{
     background: rgb(23, 22, 22);
-    font: normal 15px arial
+    font: normal 15px arial;
 }
 header{
-    text-align:center;
+    padding: auto;
+    width: 50%;
+    margin: auto;
+}
+h1{
+    font: bold 35px system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: start;
+    color:whitesmoke;
+}
+h2{
+    text-align: start;
+    font: bold 20px system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    color: rgb(227, 57, 57);
+    padding: 0.5px;
+}
+header > p{
+    font: normal 12px 'Courier New', Courier, monospace;
+    text-align:left;
+    color:rgb(211, 211, 211);
+}
+/*NAV BAR E NAVEGAÇÕES*/
+nav{
+    margin: auto;
+    padding: 2px;
+    z-index: 10px;
+    width: 90%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    font: normal 14px 'Courier New', Courier, monospace;
+    list-style:none;
+}
+li{ 
+    font: bold 10pt 'Courier New', Courier, monospace;
+    padding: 4px;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(227, 57, 57);
+
+}
+/*SECTION APRESENTAÇÃO*/
+h3{
+    font: bold 15px system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    color: rgba(245, 245, 245, 0.858);
+}
+section > div > p{
+    font: normal 10px system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    color: rgba(211, 211, 211, 0.911);
+}
+.vermelho{
+    background: rgb(180, 24, 24);
+    padding: 5px;
+    margin: 20px;
+}
+.container{
+    background: rgba(34, 34, 34, 0.79);
+    padding: 5px;
+    margin: 20px;
+}
+/*ASIDE E FOOTER*/
+aside{    
+    text-align: start;
+    background:rgba(34, 34, 34, 0.79);
+    padding: 10px;
+    margin: 100px;
+    border-radius: 2px;
+}
+div > input{
+    font: bold 11pt 'Courier New', Courier, monospace;
+    color:rgba(200, 200, 200, 0.911);
+    background-image:linear-gradient(145deg, rgb(143, 35, 35), rgb(242, 57, 57));
+    padding: 5px;
+    margin: auto;
+    border-radius: 5px;
+    border: 0;
+}
+
+aside p{
+    color: rgb(211, 211, 211);
+}
+footer{
+    background: rgba(34, 34, 34, 0.79);
+    text-align: end;
+    width: 100%;
+    padding: 3px;
+    font: normal 14px 'Courier New', Courier, monospace;
+}
+footer > p{
+    color: lightgray;
 }
