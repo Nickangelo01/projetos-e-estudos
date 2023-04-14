@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family= Roboto :wght@300 & display=swap');
+* {
+    box-sizing: border-box;
+}
+/*--CONFIGURAÇÕES DA PAGINA--*/
+body{ 
+    background-color: #d7d7d7;
+    color: #444;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+}
+
+h1{
+    font-size: 4.5rem;
+    text-align: center;
+    color: rgba(189, 120, 249, 0.776);
+    text-shadow: 3px 0.5px 5px rgba(166, 101, 188, 0.489);
+    opacity: 0.6;
+}
+
+form{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    max-width: 100%;
+    width: 400px;
+}
+
+div{
+    font: normal 15px 'Roboto', sans-serif;
+    color: #9a9a9a;
+    margin-top: 3rem;
+    text-align: center;
+}
+/*--CONFIGURAÇÃO DAS CLASSES E ID--*/
+
+.input{
+    border:none;
+    color:#444;
+    font-size: 1.7rem;
+    padding: 1rem 1.5rem;
+    display:block;
+    width: 100%;
+    
+}
+.input::placeholder{
+    color:#d7d7d7
+}
+.input:focus{
+    outline-color:rgb(179,131,226)
+}
+.todos{
+    background-color: #fff;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.todos li{
+    border-top: 1px solid #e5e5e5;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.todos li.complet{
+    color: #9a9a9a;
+    text-decoration:line-through;
+}
