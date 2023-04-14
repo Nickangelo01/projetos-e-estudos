@@ -1,5 +1,6 @@
 /*SELETIVA DE CORES E LINKS EXTERNOS*/
-
+@import url('https://fonts.googleapis.com/css2?family= Sofia+Sans+Condensedfamília= Sofia+Sans+Condensado:ital,wght@0,100;0,200;0,400;0,600;1,400;1,600 & =swap');
+@import url('https://fonts.googleapis.com/css2? family= Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600 & display=swap');
 :root{
     /*SOMENTE CORES NESSA SEÇÃO*/
     --main-black:rgb(23, 22, 22);
@@ -7,11 +8,21 @@
     --main-white: rgb(211, 211, 211);
     --main-gray: rgb(114, 114, 114);
     /*SOMENTE FONTES NESSA SEÇÃO*/
+    --main-titulo: 'Sofia Sans Condensed', sem serifa;
+    --main-principal: 'Playfair Display', serif;
 }
 /*CABEÇALHO E INICIO DO SITE*/
 body{
     height: 98vh;
-    background: var( --main-black);
+    background: var(--main-black);
+}
+header{
+    text-align: end;
+    margin: auto;
+} 
+h1{
+    font-family:var(--main-principal);
+
 }
 /*NAV BAR E NAVEGAÇÕES*/
 nav{
