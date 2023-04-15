@@ -4,6 +4,7 @@
 :root{
     /*SOMENTE CORES NESSA SEÇÃO*/
     --main-black:rgb(23, 22, 22);
+    --main-container: rgb(30, 25, 25);
     --main-red: rgb(227, 57, 57);
     --main-white: rgb(211, 211, 211);
     --main-gray: rgb(114, 114, 114);
@@ -67,16 +68,27 @@ section > h2{
 }
 h3{
     font: bold 15px var(--main-titulo);
-    color: var(--main-white);
+    color: var(--main-red);
 }
 section > div{
     margin: auto;
 }
 section > div > p{
-    font: normal 10px var(--main-principal) ;
-    color:var(--main-white);
+    color: var(--main-white);
+    font-family: var(--main-principal);
 }
+section > ul > li{
+    background: var(--main-white);
+    margin: auto;
+    border-radius: 5px;
+}
+.projetos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font: normal 15pt var(--main-titulo);
 
+}
 /*ASIDE SEÇÃO DE CONTATOS*/
 
 
