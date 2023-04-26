@@ -16,7 +16,7 @@
 }
 /*CONFIGURAÇÕES MAIN, BODY E HEADER*/
 main{
-    max-width: 800px;
+    max-width: 1100px;
     min-width: 300px;
     padding: 0px 10px 10px 10px;
     margin: auto auto 20px auto;
@@ -52,6 +52,7 @@ a{
     color: white;
 }
 nav{
+    width: 100%;
     background-color: var(--main-amarelo);
 }
 .navbar{
@@ -59,6 +60,19 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding-block: 1rem;
+}
+.nav-item{
+    min-width: 7rem;
+    text-align: center;
+    padding-block: 1rem;
+}
+button{
+    background-color: var(--main-amarelo);
+    border:none;
+}
+.btn{
+    padding: 7px;
+    margin: auto;
 }
 /*PARTE PARA ARTICLE E BIOGRAFIA*/
 h2{
@@ -77,7 +91,7 @@ h2{
 .container{
     background-color: var(--main-amarelo);
     min-width: 100px;
-    max-width: 300px;
+    max-width: 450px;
     border-radius: 10px;
     margin: 5px;
     padding: 5px;
@@ -92,7 +106,7 @@ h3{
 .vermelho{
     background-color: var(--main-vermelho);
     min-width: 100px;
-    max-width: 300px;
+    max-width: 450px;
     border-radius: 10px;
     margin: 2.5px;
     padding: 5px;
