@@ -59,12 +59,12 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-block: 1rem;
+    padding-block: 0.5rem;
 }
 .nav-item{
     min-width: 7rem;
     text-align: center;
-    padding-block: 1rem;
+    padding-block: 0.5rem;
 }
 button{
     background-color: var(--main-amarelo);
@@ -128,19 +128,25 @@ section > p{
 /*DEFINIDO ASIDE*/
 div>a{
     color:var(--main-roxo);
+    padding: 10px;
 }
-
+.links{
+    display: flex;
+    algin-items: center;
+}
 /*PARTE FINAL*/
 footer{
     background-color: var(--main-vermelho);
     display: flex;
+    
 }
 footer > h6{
-    font: bold 10pt var(--main-titulo);
+    font: normal 10pt var(--main-titulo);
     margin: auto;
     text-align: start;
+    
 }
 footer > p{
-    font: bold 10px var(--main-titulo);
+    font: normal 10pt var(--main-principal);
     margin: auto;
 }

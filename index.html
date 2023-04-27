@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Meu Portifolio</title>
 </head>
@@ -19,13 +20,13 @@
         </div>
         <ul class="navbar ">
             <li class="nav-item">
-                <a href="#">Sobre mim</a>
+                <a href="#about">Sobre mim</a>
             </li>
             <li class="nav-item">
-                <a href="#">Meus projetos</a>
+                <a href="#project">Meus projetos</a>
             </li>
             <li class="nav-item">
-                <a href="#">Meus contatos</a>
+                <a href="#number">Meus contatos</a>
             </li>
         </ul>
     </nav>
@@ -36,7 +37,7 @@
     <main>
                     <!--PARTE DE APRESENTAÇÃO-->
         <h2>Mais sobre mim</h2>
-        <article class="display">
+        <article class="display" id="about">
             
             <div class="container">
                 <h3>Prazer,Nícolas</h3>
@@ -57,7 +58,7 @@
             </div>
         </article>
         <!--MEUS PROJETOS E DESENVOLVIMENTOS-->
-        <section class="trabalhos">
+        <section class="trabalhos" id="project">
             <!--UTILIZAR IMAGENS DOS SITES CRIADOS EM TODAS AS DIVS-->
                 <h2>
                     Venha conhecer meu trabalho!!
@@ -74,15 +75,20 @@
             </ul>
         </section>
         <!--MEUS CONTATOS E MEU GITHUB-->
-        <aside class="contatos">
+        <aside class="links" id="number">
             <div>
-                <a href="">GitHub</a>
+                <a href="" class="fab fa-github">GitHub</a>
             </div>
             <div>
-                <a href="">Instagram</a>
+                <a href="" class="fab fa-instagram">Instagram</a>
             </div>
             <div>
-                <a href=""> E-mail</a>
+                <a href="mailto: nicolasa.smacedo@outlook.com" target="_blank"class="fas fa-at"> E-mail</a>
+            </div>
+            <div>
+                    <a href="https://wa.me/5561981791590" class="fab fa-whatsapp">
+                    Whatsapp
+                    </a>
             </div>
         </aside>
         </main>
