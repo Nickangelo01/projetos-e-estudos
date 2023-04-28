@@ -16,7 +16,7 @@
 }
 /*CONFIGURAÇÕES MAIN, BODY E HEADER*/
 main{
-    max-width: 1100px;
+    max-width: 800px;
     min-width: 300px;
     padding: 0px 10px 10px 10px;
     margin: auto auto 20px auto;
@@ -84,17 +84,25 @@ h2{
 }
 .display{
     display: flex;
+    flex-direction: row;
+    gap: 24px;
+    max-width: 560px;
+    padding: 16px;
+    width:100%;
     margin: auto;
-    width: 100%;
-    
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.html{
+    scroll-behavior: smooth;
 }
 .container{
     background-color: var(--main-amarelo);
-    min-width: 100px;
+    min-width: 350px;
     max-width: 450px;
     border-radius: 10px;
-    margin: 5px;
-    padding: 5px;
+    margin: 15px;
+    padding: 10px;
 }
 h3{
     font: bold 15pt var(--main-titulo);
@@ -105,14 +113,14 @@ h3{
 
 .vermelho{
     background-color: var(--main-vermelho);
-    min-width: 100px;
+    min-width: 350px;
     max-width: 450px;
     border-radius: 10px;
-    margin: 2.5px;
-    padding: 5px;
+    margin: 15px;
+    padding: 10px;
 }
 /*APENAS PARA OS PROJETOS E TRABALHOS*/
-.trabalhos{
+.painel{
     background-color: var(--main-roxo);
     margin: auto;
     padding: 20px;
@@ -125,6 +133,13 @@ section > h2 {
 section > p{
     color: var(--main-branco);
 }
+section > div{
+    display: flex;
+    flex-direction: row;
+}
+section > div> a{
+    color:white;
+}
 /*DEFINIDO ASIDE*/
 div>a{
     color:var(--main-roxo);
@@ -132,7 +147,7 @@ div>a{
 }
 .links{
     display: flex;
-    algin-items: center;
+    align-items: center;
 }
 /*PARTE FINAL*/
 footer{
