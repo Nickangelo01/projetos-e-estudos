@@ -57,25 +57,30 @@ a{
 }
 nav{
     background-color: var(--main-amarelo);
+    font: bold 15px var(--main-titulo);
 }
 .navbar{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding-block: 0.5rem;
-
+    text-align: center;
 }
 .nav-item{
-    padding: 3.5px;
-    text-align: center;
-    padding-block: 0.5rem;
+    position: relative;
+    min-width: 100px;
+    min-height: 25px;
+    margin: 0px 10px 0px 10px;
+}
+.navbar .nav-item a:hover{
+    text-decoration: underline;
 }
 button{
+    justify-content: start;
+    padding: 7px;
+    font: bold 15px var(--main-titulo);
     background-color: var(--main-amarelo);
     border:none;
 }
 .btn{
-    padding: 2.5px;
 
 }
 /*PARTE PARA ARTICLE E BIOGRAFIA*/
@@ -175,11 +180,12 @@ aside > p{
     position: absolute;
     width:120%;
     height: 120%;
-    background-image: linear-gradient(var(--main-roxo),var(--main-branco));
+    background: var(--main-roxo);
     top: 90%;
     left: -110%;
     transform: rotate(45deg);
-}.links .icon:hover i {
+}
+.links .icon:hover i {
     color: var(--main-branco);
     transform: scale(1.3) ;
 }
