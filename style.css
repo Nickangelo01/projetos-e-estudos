@@ -52,37 +52,51 @@ header > p{
 ul{
     list-style: none;
 }
+li{
+    margin: 10px;
+}
 a{
     text-decoration: none;
     color: white;
 }
 nav{
+    width: 100%;
     background-color: var(--main-amarelo);
     font: bold 15px var(--main-titulo);
 }
-.navbar{
+.menu{
     display: flex;
-    padding-block: 0.5rem;
     text-align: center;
+    
+}
+.navbar{
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: end;
 }
 .nav-item{
     position: relative;
-    min-width: 100px;
+    min-width: 50px;
     min-height: 25px;
-    margin: 0px 10px 0px 10px;
 }
 .navbar .nav-item a:hover{
     text-decoration: underline;
 }
 button{
+    max-width: 60px;
+    height: 60px;
     justify-content: start;
     padding: 7px;
     font: bold 15px var(--main-titulo);
     background-color: var(--main-amarelo);
     border:none;
+    border-radius: 30%;
 }
-.btn{
-
+button:hover{
+    
+    background-color: var(--main-roxo);
+    transition: 0.5s ease-in-out;
 }
 /*PARTE PARA ARTICLE E BIOGRAFIA*/
 h2{
@@ -180,10 +194,10 @@ aside > p{
     content:"";
     position: absolute;
     width:120%;
-    height: 120%;
+    min-height: 120%;
     background: var(--main-roxo);
     top: 90%;
-    left: -110%;
+    left: -100%;
     transform: rotate(45deg);
 }
 .links .icon:hover i {
