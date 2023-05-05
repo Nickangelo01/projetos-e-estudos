@@ -83,7 +83,7 @@ nav{
 .navbar .nav-item a:hover{
     text-decoration: underline;
 }
-button{
+.btn{
     max-width: 60px;
     height: 60px;
     justify-content: start;
@@ -210,6 +210,64 @@ aside > p{
     left: -10%;
 }
 @keyframes onHover{
+    0%{
+        left: -110%;
+        top: 90%;
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+    100%{
+        left: -10%;
+        top: -10%;
+    }
+}
+.center{
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+}
+.center .curriculum{
+    position: relative;
+    max-width: 160px;
+    height: 60px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 5px 15px -5px #aaa;
+    border-radius: 15px;
+    overflow: hidden;
+    border:none;
+    background-color: var(--main-branco);
+}
+.center .curriculum a{
+    position: relative;
+    line-height: 60px;
+    z-index: 4;
+    transition: 0.3s ease-in-out;
+    font: bold 12pt var(--main-titulo);
+    color: var(--main-amarelo);
+}
+.center .curriculum::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    min-height: 120%;
+    border-radius: 15px;
+    background: var(--main-roxo);
+    top: 90%;
+    left: -120%;
+}
+.center .curriculum:hover a{
+    color: var(--main-branco);
+    transform: scale(1.3);
+}
+.center .curriculum:hover::before{
+    animation: up 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+@keyframes up{
     0%{
         left: -110%;
         top: 90%;
