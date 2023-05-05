@@ -177,8 +177,8 @@ aside > p{
 
 }
 .links .icon{
-    width: 60px;
-    height: 60px;
+    min-width: 40px;
+    min-height: 40px;
     margin: 10px;
     position:relative;
     box-shadow: 0px 5px 15px -5px #aaa;
@@ -188,7 +188,7 @@ aside > p{
 }
 .links .icon i{
     position: relative;
-    line-height: 60px;
+    line-height: 40px;
     z-index: 4;
     font-size: 26px;
     transition: 0.3s ease-in-out;
