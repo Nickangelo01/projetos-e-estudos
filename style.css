@@ -29,6 +29,7 @@ main{
     background-color: var(--main-white);
 }
 header{
+    margin-top: 40px;
     padding: 40px;
     min-height: 100px;
     background-color: var(--main-roxo);
@@ -66,35 +67,36 @@ nav{
 }
 .menu{
     display: flex;
-    text-align: center;
-    
+    position: fixed;
+    margin-top: -40px;
+    justify-content: center;
+    align-items: center;
 }
 .navbar{
-    align-items: center;
     display: flex;
-    text-align: center;
+    margin: 5px;
+    padding: 1px;
     justify-content: end;
 }
+.navbar .nav-item:hover{
+    background: var(--main-roxo);
+    transition: 0.5s ease-in-out;
+}  
 .nav-item{
-    position: relative;
-    min-width: 50px;
-    min-height: 25px;
+    min-width: 35px;
+    padding: 7px;
+    border-radius: 15px;
 }
-.navbar .nav-item a:hover{
-    text-decoration: underline;
-}
+
+
 .btn{
-    max-width: 60px;
-    height: 60px;
-    justify-content: start;
     padding: 7px;
     font: bold 15px var(--main-titulo);
     background-color: var(--main-amarelo);
     border:none;
-    border-radius: 30%;
+    border-radius: 15px;
 }
 button:hover{
-    
     background-color: var(--main-roxo);
     transition: 0.5s ease-in-out;
 }
@@ -288,12 +290,12 @@ footer{
     
 }
 footer > h6{
-    font: normal 10pt var(--main-titulo);
+    font: bold 10pt var(--main-titulo);
     margin: auto;
     text-align: start;
     
 }
 footer > p{
-    font: normal 10pt var(--main-principal);
+    font: bold 10pt var(--main-principal);
     margin: auto;
 }
