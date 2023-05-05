@@ -15,9 +15,12 @@
     padding: 0px
 }
 /*CONFIGURAÇÕES MAIN, BODY E HEADER*/
+html{
+    scroll-behavior: smooth;
+}
 body{
     width: 100%;
-    max-height: 98vh;
+    height: 98vh;
 }
 main{
     max-width: 800px;
@@ -78,7 +81,8 @@ nav{
     justify-content: end;
 }
 .nav-item{
-    min-width: 35px;
+    min-height: 10px;
+    min-width: 25px;
     padding: 7px;
     border-radius: 15px;
     color: var(--main-branco)
