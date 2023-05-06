@@ -3,6 +3,9 @@
     --main-neutro-escuro: #8DA1B0;
     --main-neutro: #FFFFFF;
     --main-botao: #169EFF;
+    --main-span: #242323;
+
+    --main-padrão: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 *{
@@ -21,17 +24,24 @@ body{
 ::-webkit-scrollbar-track{
     background: var(--main-neutro-escuro);
 }
+::webkit-scrollbar-thumb{
+    border-radius: 8px;
+    background: #CCCCCC;
+}
 /*PARTE FUNCIONAL DO SITE*/
 h1{
     text-align: center;
     margin-top: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--main-padrão);
 }
 p{
     text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--main-padrão);
 }
-
+/*CLASSES E CONFIGURAÇÕES*/
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--main-neutro-escuro);
+}
 .container{
     position: relative;
     min-width: 290px;
@@ -40,7 +50,111 @@ p{
     padding: 25px;
     margin: 45px auto 0;
     background: var(--main-neutro);
-    box-sizing: 0px 15px 10px var(--main-neutro)
+    box-sizing: 0px 15px 10px var(--main-neutro);
+}
+.container .area{
+    position: relative;
+    width: 100%;
+    height: 64px;
 }
 
+.area textarea{
+    width: 100%;
+    height: 100%;
+    font: normal 18px var(--main-padrão);
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    outline: none;
+    padding: 18px 40px 18px 15px;
+    resize: none;
+}
+.area textarea:focus{
+    border-color: var(--main-botao);
+}
 
+textarea::-webkit-scrollbar{
+    display: none;
+}
+
+.area .notas{
+    position: absolute;
+    top: 50%;
+    left:15%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 24px;
+    color:#707070;
+}
+
+.container .todoLists{
+    max-height: 380px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+.todoLists .lista{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: var(--main-neutro);
+    padding: 20px 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.todoLists .lista input{
+    height: 16px;
+    min-width: 16px;
+    accent-color: var(--main-botao);
+    pointer-events: none;
+}
+
+.todoLists .lista .task{
+    margin: 0 30px 0 15px;
+    word-break: break-all;
+}
+.lista input:checked ~ .task{
+    text-decoration: line-through;
+}
+.todoLists .lista i{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #707070;
+    padding: 5px;
+    opacity: 0.6;
+    display: none;
+}
+.todoLists .lista:hover i{
+    display: inline-flex;
+}
+.todoLists .lista i:hover{
+    opacity: 1;
+}
+.container .pendente{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.pendente span{
+    color: var(--main-span);
+}
+.pendente .limpar{
+    padding: 6px 12px;
+    outline: none;
+    border: none;
+    background-color: var(--main-botao);
+    color: var(--main-fundo);
+    font: bold 14px var(--main-padrão);
+    border-radius: 5px;
+    cursor: pointer;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.limpar:hover{
+    background: var(--main-fundo);
+}
