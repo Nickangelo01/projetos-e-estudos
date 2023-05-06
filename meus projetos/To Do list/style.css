@@ -1,72 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family= Roboto :wght@300 & display=swap');
-* {
+:root{
+    --main-fundo: #E2F2FD;
+    --main-neutro-escuro: #8DA1B0;
+    --main-neutro: #FFFFFF;
+    --main-botao: #169EFF;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
-/*--CONFIGURAÇÕES DA PAGINA--*/
-body{ 
-    background-color: #d7d7d7;
-    color: #444;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: auto;
+body{
+    background: var(--main-fundo);
 }
+/*SELETOR SECTION*/
 
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-track{
+    background: var(--main-neutro-escuro);
+}
+/*PARTE FUNCIONAL DO SITE*/
 h1{
-    font-size: 4.5rem;
     text-align: center;
-    color: rgba(189, 120, 249, 0.776);
-    text-shadow: 3px 0.5px 5px rgba(166, 101, 188, 0.489);
-    opacity: 0.6;
+    margin-top: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-form{
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
-    max-width: 100%;
-    width: 400px;
-}
-
-div{
-    font: normal 15px 'Roboto', sans-serif;
-    color: #9a9a9a;
-    margin-top: 3rem;
+p{
     text-align: center;
-}
-/*--CONFIGURAÇÃO DAS CLASSES E ID--*/
-
-.input{
-    border:none;
-    color:#444;
-    font-size: 1.7rem;
-    padding: 1rem 1.5rem;
-    display:block;
-    width: 100%;
-    
-}
-.input::placeholder{
-    color:#d7d7d7
-}
-.input:focus{
-    outline-color:rgb(179,131,226)
-}
-.todos{
-    background-color: #fff;
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.todos li{
-    border-top: 1px solid #e5e5e5;
-    cursor: pointer;
-    font-size: 1.5rem;
-    padding: 1rem 1.5rem;
+.container{
+    position: relative;
+    min-width: 290px;
+    max-width: 480px;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 45px auto 0;
+    background: var(--main-neutro);
+    box-sizing: 0px 15px 10px var(--main-neutro)
 }
 
-.todos li.complet{
-    color: #9a9a9a;
-    text-decoration:line-through;
-}
+

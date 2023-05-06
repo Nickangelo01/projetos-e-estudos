@@ -140,26 +140,26 @@ h3{
     padding: 10px;
 }
 /*APENAS PARA OS PROJETOS E TRABALHOS*/
-.painel{
-    background-color: var(--main-roxo);
-    margin: auto;
-    padding: 20px;
-    border-radius: 10px;
-}
-section > h2 {
-    text-align: center;
-    color: var(--main-amarelo);
+section{
+    padding: 15px;
+    background: var(--main-roxo);
+    border-radius: 15px;
 }
 section > p{
+    font: bold 10pt var(--main-principal);
     color: var(--main-branco);
+    padding-bottom: 5px;
 }
-section > div{
+.painel{
     display: flex;
-    flex-direction: row;
+    padding-right: 7px;
 }
-section > div> a{
-    color:white;
+.item{
+    width: 100px;
+    padding: 5px;
+    background: var(--main-amarelo);
 }
+
 /*DEFINIDO ASIDE*/
 aside > h3{
     color: var(--main-amarelo);
