@@ -4,26 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
     <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
 </head>
 <main>
     <body>
-        <h1>O que iremos fazer hoje?</h1>
-        <p>Eita como tem coisa...</p>
+        <h1>To Do List</h1>
+        
         <div class="container">
             <div class="area">
-                <textarea placeholder="digite suas tarefas">
-                </textarea>
-                <i class="uil uil-notes notas"></i>
+                <h2>O que iremos fazer hoje?</h2>
+                <p>Eita como tem coisa...</p>
+                <form id="form">
+                    <input type="text" id="input-tarefas" placeholder="Digite suas tarefas" autocomplete="off">
+                    <ul class="ToDo" id="ToDos"></ul>
+                </form>
             </div>
-            <ul class="todoLists"></ul>
-            <div class="pendente">
-                <span>
-                    Você tem <span class="pendenteNum">nenhuma</span> tarefa pendente 
+            <div>
+                <span id="pending-tasks">
+                    Você tem <span id="pending-num">
+                        nenhuma
+                    </span> 
+                    atividades pendente.
                 </span>
-                <button class="limpar"> Limpar tarefas</button>
+                <button class="botao-limpar" id="limpar">
+                    Limpar tarefas
+                </button>
             </div>
         </div>
+        
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </main>
+
+</html>
