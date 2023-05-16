@@ -72,13 +72,6 @@ input:focus{
     padding: 5px 15px 25px 15px;
 }
 
-.botao-limpar{
-    margin: 5px;
-    padding: 10px;
-    background-color: var(--main-botao);
-    border-radius: 5px;
-    border:none;
-}
 .todos{
     background-color: var(--main-neutro);
     margin: 0;
@@ -97,4 +90,25 @@ input:focus{
 .todos li.completed{
     color: var(--main-neutro-escuro);
     text-decoration: line-through;
+}
+.container .pending-tasks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.pending-tasks .clear-button{
+    padding: 6px 12px;
+    outline: none;
+    border: none;
+    background-color: var(--main-botao);
+    color: var(--main-neutro);
+    font: normal 14px var(--main-padrão);
+    border-radius: 5px;
+    cursor: pointer;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.clear-button:hover{
+    background-color: ;
 }

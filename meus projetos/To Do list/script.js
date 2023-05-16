@@ -1,6 +1,8 @@
 const form = document.getElementById('form')
 input = document.getElementById('input-tarefas')
 todosUL = document.getElementById('todos')
+clearButton = document.getElementById('limpar')
+pendingNum = document.getElementsByClassName('pending-num')
 
 const todos = JSON.parse(localStorage.getItem('todos'))
 
@@ -28,8 +30,12 @@ function addTodo(todo){
         }
 
         todoEl.innerText = todoText
-        
+
         todoEl.addEventListener('click', () => {
+            todoEl.classList.toggle('completed')
+            updateLS()
+        })
+        todoEl.addEventListener('contextmenu', (e) => {
             e.preventDefault()
 
             todoEl.remove()
@@ -56,4 +62,14 @@ function updateLS(){
         })
     })
     localStorage.setItem('todos', JSON.stringify(todos))
+}
+
+//add a função do botão de limpar
+clearButton.addEventListener('click', ()=> {
+    todosUL.innerHTML = ''
+    todoEl()
+})
+//parte do codigo que vai adicionar o numero de atividades pendentes 
+function allTasks(){
+
 }
